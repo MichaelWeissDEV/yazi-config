@@ -17,6 +17,12 @@ Paket: `arch-dotfiles-yazi`. Dateien: `~/.config/yazi/yazi.toml`, `theme.toml`,
 Hier unabhängig auf `main` pushen; nach erfolgreichem Registry-Build mit
 `sudo pacman -Syu` aktualisieren. [PACKAGING.md](PACKAGING.md).
 
+### Anpassung
+
+`yazi.toml` steuert das Verhalten, `theme.toml` das Theme und `flavors/` enthält die mitgelieferte Flavor. Mit `yazi` starten; die Zsh-Funktion `y` übernimmt optional das zuletzt besuchte Verzeichnis.
+
+Eigene Änderungen in der aktivierten Benutzerkopie bleiben bei der Synchronisierung erhalten; neue abweichende Vorgaben erscheinen als `.pacnew`. Siehe [Update und Wiederherstellung](https://arch-dotfiles.readthedocs.io/en/latest/verification/).
+
 [![Package safety](https://github.com/MichaelWeissDEV/yazi-config/actions/workflows/package.yml/badge.svg)](https://github.com/MichaelWeissDEV/yazi-config/actions/workflows/package.yml)
 
 [MIT-Lizenz](LICENSE); die mitgelieferte Flavor behält ihre eigenen Lizenzen.
